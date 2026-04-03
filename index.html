@@ -4,148 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Polymarket Официальный Сайт в России и СНГ — Ставки и Прогнозы</title>
-    <meta name="description" content="Узнайте, что такое Полимаркет и как делать ставки. Официальный сайт Polymarket com в России, Казахстане и СНГ. Инструкция, как зайти на Polymarket сайт и начать торговать.">
-    <meta name="keywords" content="polymarket, полимаркет, polymarket ставки, полимаркет официальный сайт, polymarket в россии, полимаркет это, poly market">
+    <title id="seo-title">Polymarket Official | Prediction Markets & Global Odds</title>
+    <meta id="seo-desc" name="description" content="Trade on world events with Polymarket. Access official site, real-time odds, and decentralized forecasting.">
+    <meta name="keywords" content="polymarket, полимаркет, polymarket ставки, polymarket официальный сайт, poly market, polimarket">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;800&display=swap" rel="stylesheet">
     
     <style>
-        :root { --main-blue: #0052ff; --dark-bg: #0f172a; }
-        body { background-color: #f8fafc; color: #1e293b; font-family: 'Roboto', sans-serif; margin: 0; }
-        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
-        .hero-gradient { background: linear-gradient(135deg, #0052ff 0%, #002d91 100%); color: white; }
-        .nav-link { font-weight: 500; color: #64748b; transition: color 0.3s; }
-        .nav-link:hover { color: var(--main-blue); }
-        .feature-card { background: white; border-radius: 12px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); border-top: 4px solid var(--main-blue); }
-        .seo-text { line-height: 1.8; font-size: 1.05rem; }
-        .seo-text strong { color: var(--main-blue); }
-        .faq-item { border-bottom: 1px solid #e2e8f0; padding: 15px 0; }
+        :root { --accent: #6366f1; }
+        body { background-color: #030712; color: #f3f4f6; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.08); }
+        .gradient-bg { background: radial-gradient(circle at top right, #1e1b4b, #030712); }
+        .lang-btn { border: 1px solid rgba(255, 255, 255, 0.2); transition: all 0.2s; }
+        .lang-btn:hover { background: var(--accent); border-color: var(--accent); }
+        .seo-block { line-height: 1.7; color: #9ca3af; }
+        .seo-block strong { color: #fff; }
+        [hidden] { display: none !important; }
     </style>
 </head>
-<body>
+<body class="gradient-bg min-h-screen">
 
-    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50 py-4 px-6 shadow-sm">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <span class="text-2xl font-black text-blue-600 tracking-tighter uppercase italic">Polymarket.RU</span>
-            </div>
-            <div class="hidden md:flex gap-8 items-center">
-                <a href="#about" class="nav-link">Что это?</a>
-                <a href="#guide" class="nav-link">Как сделать ставку</a>
-                <a href="#markets" class="nav-link">Рынки</a>
-                <button class="bg-blue-600 text-white px-6 py-2 rounded-lg font-bold hover:bg-blue-700 transition">Вход на сайт</button>
-            </div>
+    <header class="glass sticky top-0 z-50 px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 bg-indigo-500 rounded-full animate-pulse"></div>
+            <span class="text-xl font-extrabold tracking-tighter uppercase">Poly.Global</span>
         </div>
-    </nav>
-
-    <header class="hero-gradient py-20 px-6">
-        <div class="max-w-5xl mx-auto text-center">
-            <h1 class="text-4xl md:text-6xl font-black mb-6">Polymarket Официальный Сайт в СНГ</h1>
-            <p class="text-xl opacity-90 mb-8">Ваш проводник в мир децентрализованных прогнозов. Узнайте, как работает <strong>полимаркет в россии</strong> и делайте точные <strong>polymarket ставки</strong> прямо сейчас.</p>
-            <div class="bg-white/10 p-4 rounded-xl inline-block backdrop-blur-sm border border-white/20">
-                <span class="text-sm font-mono tracking-widest uppercase">Актуальный домен 2026: Polymarket Com</span>
-            </div>
+        
+        <div class="flex items-center gap-4">
+            <button onclick="toggleLanguage()" class="lang-btn px-3 py-1 rounded text-xs font-bold uppercase tracking-widest">
+                <span id="lang-label">RU / EN</span>
+            </button>
+            <button class="bg-indigo-600 hover:bg-indigo-500 text-white px-5 py-2 rounded-full text-xs font-bold transition">
+                <span class="lang-ru">Вход</span><span class="lang-en" hidden>Login</span>
+            </button>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-6 py-16">
+    <main class="max-w-6xl mx-auto px-6 py-12">
         
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 mb-20">
-            <div class="lg:col-span-2 seo-text">
-                <h2 id="about" class="text-3xl font-bold mb-6">Polymarket — что это за платформа?</h2>
-                <p class="mb-4">
-                    <strong>Полимаркет</strong> — это крупнейшая децентрализованная площадка предсказаний, работающая на технологии блокчейн. Сегодня <strong>polymarket официальный сайт</strong> является золотым стандартом для тех, кто хочет не просто следить за новостями, но и зарабатывать на своих знаниях.
-                </p>
-                <p class="mb-6">
-                    Многие ищут <strong>polymarket в россии</strong>, так как платформа предлагает уникальные котировки на политические события, экономические показатели и спортивные матчи, которые недоступны у обычных букмекеров. <strong>Poly market</strong> (или как его часто называют в СНГ — <strong>polimarket</strong>) использует «мудрость толпы» для формирования самых точных вероятностей в мире.
-                </p>
+        <section class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-black mb-6 tracking-tight">
+                <span class="lang-ru">Будущее за <span class="text-indigo-500">Прогнозами</span></span>
+                <span class="lang-en" hidden>Predict the <span class="text-indigo-500">Future</span></span>
+            </h1>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">
+                <span class="lang-ru">Официальный доступ к <strong>polymarket com</strong>. Анализируйте <strong>полимаркет ставки</strong> и события со всего мира на <strong>poly market</strong>.</span>
+                <span class="lang-en" hidden>Official access to <strong>polymarket com</strong>. Explore <strong>polymarket official</strong> odds and global event trading on <strong>poly market</strong>.</span>
+            </p>
+        </section>
 
-                <div class="feature-card p-8 mb-8">
-                    <h3 class="text-xl font-bold mb-4">Почему выбирают Polymarket Official?</h3>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Polymarket ставки</strong> не имеют посредников — вы торгуете напрямую с другими пользователями.</li>
-                        <li>Полная прозрачность всех операций на <strong>polymarket com</strong>.</li>
-                        <li>Высокая ликвидность на <strong>полимаркет ставки</strong> в любых категориях.</li>
-                    </ul>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            <div class="glass p-8 rounded-3xl">
+                <h3 class="text-xs font-bold text-indigo-400 uppercase tracking-widest mb-4">Analytics</h3>
+                <canvas id="marketChartUnique"></canvas>
             </div>
-
-            <div class="space-y-6">
-                <div class="feature-card p-6">
-                    <h3 class="font-bold text-lg mb-4 italic uppercase">Рынок СНГ / Прогноз</h3>
-                    <canvas id="cisChart" height="250"></canvas>
-                    <div class="mt-4 text-sm text-gray-500">
-                        *Актуальные данные <strong>полимаркет официальный сайт</strong> на 2026 год.
-                    </div>
+            
+            <div class="flex flex-col justify-center p-8 glass rounded-3xl">
+                <h2 class="text-3xl font-bold mb-4">
+                    <span class="lang-ru">Что такое Полимаркет?</span>
+                    <span class="lang-en" hidden>What is Polymarket?</span>
+                </h2>
+                <div class="seo-block">
+                    <span class="lang-ru">
+                        <strong>Полимаркет это</strong> децентрализованная среда, где каждый может торговать своими прогнозами. Используя <strong>полимаркет официальный сайт</strong>, вы получаете данные, которые точнее любых новостей. В 2026 году <strong>polymarket в россии</strong> и мире стал основным инструментом анализа будущего.
+                    </span>
+                    <span class="lang-en" hidden>
+                        <strong>Polymarket official</strong> is a decentralized platform for event trading. By using <strong>polymarket site</strong>, you gain insights more accurate than mainstream media. In 2026, <strong>poly market</strong> remains the leader in global prediction data.
+                    </span>
                 </div>
             </div>
         </div>
 
-        <section class="mb-20">
-            <h2 class="text-3xl font-bold mb-10 text-center">Часто задаваемые вопросы о Полимаркет</h2>
-            <div class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-                <div class="faq-item">
-                    <h4 class="font-bold mb-2">Как найти полимаркет официальный сайт?</h4>
-                    <p class="text-gray-600 text-sm">Основной адрес платформы — <strong>polymarket com</strong>. Мы рекомендуем использовать проверенный <strong>полимаркет сайт</strong>, чтобы избежать фишинговых ресурсов.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="font-bold mb-2">Работает ли Polymarket в России и СНГ?</h4>
-                    <p class="text-gray-600 text-sm">Да, доступ к <strong>polymarket в россии</strong> возможен. Пользователи из Казахстана, Украины и Беларуси также активно используют <strong>poly market</strong> для анализа мировых трендов.</p>
-                </div>
-                <div class="faq-item">
-                    <h4 class="font-bold mb-2">Как делать полимаркет ставки?</h4>
-                    <p class="text-gray-600 text-sm">Для этого вам понадобится криптокошелек. После подключения к <strong>polymarket официальный</strong>, вы сможете выбирать интересующие вас рынки и покупать доли в исходах «Да» или «Нет».</p>
+        <article class="glass p-10 rounded-3xl mb-12">
+            <div class="lang-ru">
+                <h2 class="text-2xl font-bold mb-6 italic">Как использовать Polymarket ставки в СНГ?</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-400 leading-relaxed">
+                    <p>Для пользователей из РФ и СНГ важно использовать <strong>полимаркет официальный</strong> домен для безопасности. Платформа позволяет оценивать вероятности событий в реальном времени. Если вы ищете <strong>полимаркет сайт</strong>, убедитесь в наличии актуального сертификата безопасности.</p>
+                    <p>Многие ошибочно пишут <strong>polimarket</strong>, но оригинальный сервис доступен по адресу <strong>polymarket com</strong>. Здесь доступны лучшие <strong>полимаркет ставки</strong> на спорт, политику и крипто-тренды 2026 года.</p>
                 </div>
             </div>
-        </section>
+            <div class="lang-en" hidden>
+                <h2 class="text-2xl font-bold mb-6 italic">Global Event Trading on Polymarket Site</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-sm text-gray-400 leading-relaxed">
+                    <p>Accessing <strong>polymarket official</strong> tools provides a competitive edge in market analysis. The <strong>poly market</strong> ecosystem is designed for transparency and real-time data settlement.</p>
+                    <p>Whether you are looking for <strong>what is polymarket</strong> or specific <strong>polymarket official</strong> odds, our portal provides the most direct route to the global forecasting exchange.</p>
+                </div>
+            </div>
+        </article>
 
     </main>
 
-    <footer class="bg-slate-900 text-white py-16 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-            <div class="col-span-2">
-                <div class="text-xl font-bold mb-6">POLYMARKET RUSSIA</div>
-                <p class="text-gray-400 text-sm leading-relaxed">
-                    Информационный портал о платформе <strong>polimarket</strong>. Мы предоставляем актуальные данные, обзоры и гайды по использованию системы <strong>poly market</strong>. Будьте в курсе всех событий на <strong>полимаркет официальный сайт</strong>.
-                </p>
-            </div>
-            <div>
-                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-blue-400">Навигация</h5>
-                <ul class="text-gray-400 text-sm space-y-2">
-                    <li>Полимаркет ставки</li>
-                    <li>Полимаркет это</li>
-                    <li>Polymarket сайт</li>
-                </ul>
-            </div>
-            <div>
-                <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-blue-400">Контакты</h5>
-                <p class="text-gray-400 text-sm italic">Поддержка сообщества СНГ через Polymarket Official.</p>
-            </div>
+    <footer class="border-t border-white/5 py-12 px-6 text-center text-gray-500 text-xs">
+        <p>© 2026 Poly.Global Hub | <span class="lang-ru">Не является финансовой рекомендацией.</span><span class="lang-en" hidden>Not financial advice.</span></p>
+        <div class="mt-4 flex justify-center gap-6">
+            <strong>polymarket com</strong>
+            <strong>poly market</strong>
+            <strong>полимаркет</strong>
         </div>
     </footer>
 
     <script>
-        const ctx = document.getElementById('cisChart').getContext('2d');
+        // 1. Language Logic
+        let currentLang = 'ru';
+
+        function initLanguage() {
+            // Простейшая проверка по таймзоне (СНГ обычно от GMT+2 до GMT+12)
+            const offset = new Date().getTimezoneOffset() / -60;
+            const isCIS = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].includes(offset);
+            
+            // Если не СНГ или в браузере английский — ставим EN
+            if (!isCIS || navigator.language.startsWith('en')) {
+                setLanguage('en');
+            } else {
+                setLanguage('ru');
+            }
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            const ruElements = document.querySelectorAll('.lang-ru');
+            const enElements = document.querySelectorAll('.lang-en');
+            const title = document.getElementById('seo-title');
+            const desc = document.getElementById('seo-desc');
+
+            if (lang === 'ru') {
+                ruElements.forEach(el => el.hidden = false);
+                enElements.forEach(el => el.hidden = true);
+                title.innerText = "Polymarket Официальный Сайт | Ставки и Прогнозы 2026";
+                desc.content = "Официальный доступ к Полимаркет в России. Как делать ставки на polymarket com и анализировать рынок.";
+                document.documentElement.lang = "ru";
+            } else {
+                ruElements.forEach(el => el.hidden = true);
+                enElements.forEach(el => el.hidden = false);
+                title.innerText = "Polymarket Official Site | Global Event Trading Platform";
+                desc.content = "Join Polymarket official. Real-time forecasting, decentralized odds, and global event trading.";
+                document.documentElement.lang = "en";
+            }
+        }
+
+        function toggleLanguage() {
+            setLanguage(currentLang === 'ru' ? 'en' : 'ru');
+        }
+
+        // 2. Chart Logic
+        const ctx = document.getElementById('marketChartUnique').getContext('2d');
         new Chart(ctx, {
-            type: 'bar',
+            type: 'line',
             data: {
-                labels: ['РФ', 'КЗ', 'УКР', 'БЛ'],
+                labels: ['Q1', 'Q2', 'Q3', 'Q4'],
                 datasets: [{
-                    label: 'Активность пользователей (%)',
-                    data: [65, 45, 55, 30],
-                    backgroundColor: '#0052ff',
-                    borderRadius: 5
+                    label: 'Global Vol.',
+                    data: [30, 45, 35, 60],
+                    borderColor: '#6366f1',
+                    tension: 0.4,
+                    fill: true,
+                    backgroundColor: 'rgba(99, 102, 241, 0.1)'
                 }]
             },
             options: {
                 responsive: true,
                 plugins: { legend: { display: false } },
-                scales: { y: { beginAtZero: true, grid: { color: '#f1f5f9' } } }
+                scales: { 
+                    x: { grid: { display: false }, ticks: { color: '#4b5563' } },
+                    y: { display: false }
+                }
             }
         });
+
+            
+        // Start
+        initLanguage();
     </script>
 </body>
 </html>
